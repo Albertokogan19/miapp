@@ -1,1 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherNow Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+    <h1>WeatherNow Pro</h1>
+    <p>Professional Weather Dashboard</p>
+</header>
+
+<main class="container">
+
+    <div class="search-box">
+        <input
+            type="text"
+            id="cityInput"
+            placeholder="Enter a city (Example: Tokyo)"
+        >
+        <button onclick="searchWeather()">
+            Search
+        </button>
+    </div>
+
+    <div class="card">
+
+        <h2 id="city">
+            --
+        </h2>
+
+        <div class="temperature" id="temperature">
+            --
+        </div>
+
+        <div class="condition" id="condition">
+            Loading...
+        </div>
+
+        <div class="grid">
+
+            <div class="item">
+                <span>🌬 Wind</span>
+                <strong id="wind">--</strong>
+            </div>
+
+            <div class="item">
+                <span>💧 Humidity</span>
+                <strong id="humidity">--</strong>
+            </div>
+
+            <div class="item">
+                <span>🌡 Max Temp</span>
+                <strong id="maxTemp">--</strong>
+            </div>
+
+            <div class="item">
+                <span>🌡 Min Temp</span>
+                <strong id="minTemp">--</strong>
+            </div>
+
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    Powered by Open-Meteo API
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
